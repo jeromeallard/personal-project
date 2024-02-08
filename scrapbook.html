@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Val&Jem</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <style>
+        /* Your CSS styles here */
+        body {
+            font-family: 'Pacifico', cursive;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg'); /* Background image */
+            background-size: 100% 100%; /* Cover the entire viewport */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent background image from repeating */
+        }
+
+        header {
+            background-color: #d81b60; /* Dark Pink */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: white;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+        }
+
+        nav {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 20px;
+            position: relative;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+        nav a.active {
+            text-decoration: underline; /* or any other style you prefer */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Distribute space between items */
+        }
+
+        .image {
+            position: relative;
+            margin-bottom: 20px;
+            width: calc(33.33% - 20px); /* Adjust for margin between images */
+            max-width: calc(33.33% - 20px); /* Adjust for margin between images */
+            background-color: #fff; /* White background */
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            overflow: hidden;
+            transition: transform 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+            transition: transform 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        .image:hover {
+            transform: translateY(-5px); /* Move up slightly */
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Bigger shadow on hover */
+        }
+
+        .image:hover img {
+            filter: blur(1.2px); /* Add blur effect on hover */
+        }
+
+        .description {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0); /* Change opacity as desired */
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+            text-align: center; /* Center the description text */
+        }
+
+        .image:hover .description {
+            opacity: 1; /* Show description on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Val & Jem</h1>
+        <nav>
+            <a href="home.html">Valentine's</a>
+            <a href="scrapbook.html" class="active">Digital Scrapbook</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="image">
+            <img src="image5.jpg" alt="Image 1">
+            <div class="description">30th Dec 2023</div>
+        </div>
+        <div class="image">
+            <img src="image2.jpg" alt="Image 2">
+            <div class="description">Jan 7th 2023</div>
+        </div>
+        <div class="image">
+            <img src="image3.jpg" alt="Image 3">
+            <div class="description">June 23rd 2023</div>
+        </div>
+        <div class="image">
+            <img src="image4.jpg" alt="Image 4">
+            <div class="description">June 23rd 2023</div>
+        </div>
+        <div class="image">
+            <img src="image8.jpg" alt="Image 5">
+            <div class="description">Dec 31st 2023</div>
+        </div>
+        <div class="image">
+            <img src="image6.jpg" alt="Image 6">
+            <div class="description">Dec 30th 2023</div>
+        </div>
+        <div class="image">
+            <img src="image7.jpg" alt="Image 7">
+            <div class="description">Sep 4th 2023</div>
+        </div>
+        <div class="image">
+            <img src="image10.jpg" alt="Image 8">
+            <div class="description">Feb 15th 2023</div>
+        </div>
+        <div class="image">
+            <img src="image9.jpg" alt="Image 9">
+            <div class="description">30th Dec 2023</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
