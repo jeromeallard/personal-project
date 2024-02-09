@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine's Day Question</title>
+    <title>Val & Jem</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
     <style>
         /* CSS styles for the page */
@@ -22,7 +22,7 @@
 
         header {
             background-color: #d81b60;
-            padding: 20px;
+            padding: 15px;
             text-align: center;
             margin-left: -30px;
             margin-right: -30px;
@@ -149,7 +149,7 @@
         </nav>
     </header>
 
-    <p style="color: #d81b60; font-family: 'Pacifico', cursive;">Play the audio below before you begin reading!</p>
+    <p style="color: #d81b60; font-family: 'Pacifico', cursive;">Here's a song that reminds me of you and encapsulates my emotions lately.</p>
     <!-- Add the audio element with autoplay, loop, and controls attributes -->
     <audio autoplay loop controls>
         <source src="San Junipero.mp3" type="audio/mp3">
@@ -157,9 +157,8 @@
 
     <div id="cute-paragraph">
         <img src="us.jpg" alt="Cute Image">
-        <p>Ma Poétesse, my heart overflows with gratitude for the incredible love you bring into my life. You are my joy, my warmth, and my greatest blessing. I love you
-            "Distance may keep us physically apart, but it can't diminish the depth of my feelings for you. As Valentine's Day approaches, I find myself wanting to bridge that distance with the warmth of my affection. Every moment spent apart only strengthens my resolve to cherish and adore you even more.
-            So, as we navigate this distance between us, I ask you to be my Valentine. Let's defy the miles with the strength of our connection and celebrate our love despite the miles that separate us. With you in my heart, every day feels like Valentine's Day.
+        <p>Ma Poétesse, as I sit here miles apart, I long to hold you close and feel your warmth beside me. Every moment spent apart only serves to magnify how deeply I miss you, and how much your presence means to me.
+            You are not just my girlfriend; you are my confidante, my partner in crime, and my best friend. The laughs we share echoe in my mind, serving as a reminder of the joy you bring into my life. In this distance, I find solace in the memories we've created, the silly jokes, and the quiet moments of understanding. Each memory serves as a reminder of the immeasurable bond we share, a bond that transcends the physical distance between us. Though we may be continets apart, know that you're always close to my heart and that my love for you continually grows stronger. I miss you dearly however this serves as a reminder of just how much I cherish us. So with that being said...
         </p>
         <p id="question" style="color: #d81b60;">Will you do me the biggest honor of being my Valentine?</p>
     </div>
@@ -179,7 +178,7 @@
             // Remove the 'selected' class from the 'No' button if present
             document.getElementById("noButton").classList.remove("selected");
 
-            document.getElementById("response").innerHTML = "Yay! You're my Valentine! ❤️";
+            document.getElementById("response").innerHTML = "Yay! You're my Valentine! I can't wait to celebrate us andmake more memories together. I love you ❤️";
 
             // Check if the other button's animation is active and stop it
             if (isAnimationActive) {
@@ -199,7 +198,7 @@
             // Remove the 'selected' class from the 'Yes' button if present
             document.getElementById("yesButton").classList.remove("selected");
 
-            document.getElementById("response").innerHTML = "Can't believe you actually pressed no. 💔";
+            document.getElementById("response").innerHTML = "I Can't believe you actually pressed no. 😭💔";
 
             // Check if the other button's animation is active and stop it
             if (isAnimationActive) {
